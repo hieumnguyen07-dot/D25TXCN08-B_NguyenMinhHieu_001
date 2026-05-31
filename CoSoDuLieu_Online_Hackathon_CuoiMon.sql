@@ -33,7 +33,7 @@ CREATE TABLE Payment (
     payment_method VARCHAR(50) NOT NULL,
     payment_amount DECIMAL(10,2) NOT NULL,
     payment_date DATE NOT NULL,
-    FOREIGN KEY (session_id) REFERENCES LiveSession(session_id) ON DELETE CASCADE
+    FOREIGN KEY (session_id) REFERENCES LiveSession(session_id)
 );
 
 INSERT INTO Creator (creator_id, creator_name, creator_email, creator_phone, creator_platform) 
